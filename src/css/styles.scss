@@ -1,13 +1,186 @@
 ---
 ---
-// Import partials.
-@import
-  "base"
-;
-
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic);
-
 
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+$primary-color: #013b67;
+$primary-color-light: #3C7B9C;
+$primary-color-dark: #030709;
+$background-color-light: #f0f5f7;
+
+a:hover {
+  color: #eb6a4b;
+}
+
+.container {
+  padding: 20px 15px;
+}
+
+/* Custom page header */
+header {
+  background-color: $primary-color;
+  text-align: center;
+
+  .logo {
+    padding: 20px;
+    display: inline-block;
+
+    img {
+      width: 130px;
+    }
+  }
+
+  nav {
+    margin: 0 auto;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+      }
+
+      a {
+          display: block;
+          padding: 15px;
+          color: #fff;
+      
+        &:hover,
+        &:visited,
+        &:focus {
+          color: #fff;
+          text-decoration: none;
+          background-color: $primary-color-light;
+        }
+      }
+    }
+  }
+}
+
+/* Custom page footer */
+footer {
+  padding: 20px 0;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+
+  section {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+section.page {
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+
+  header {
+    text-align: left;
+
+    nav {
+      max-width: 900px;
+
+      ul {
+        float: right;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: $background-color-light;
+
+  .lead {
+    margin-top: 20px;
+    text-align: left;
+
+    em {
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+
+  .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+  }
+
+  #headshot {
+    float: right;
+    padding: 10px 20px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+
+  & > h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: $primary-color;
+  }
+
+  &.highlight {
+    background-color: $background-color-light;
+  }
+
+  &.how-it-works {
+    .cta {
+      text-align: center;
+      clear: both;
+      padding: 25px 0 0 0;
+      .btn {
+        padding: 14px 24px;
+        font-size: 21px;
+       }
+    }
+  }
+
+  &.features {
+    h4 {
+      margin-top: 25px;
+      i.fa {
+        padding-right: 5px;
+      }
+    }
+  }
+
+  &.pricing {
+    table {
+      th {
+        font-size: 20px;
+      }
+
+      td, th {
+        text-align: center;
+      }
+    }
+  }
+
+  &.contact {
+    text-align: center;
+    
+    p {
+      font-size: 18px;
+    }
+  }
 }
