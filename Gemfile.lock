@@ -215,6 +215,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  sass (~> 3.5.3)
 
 RUBY VERSION
    ruby 2.4.0p0
