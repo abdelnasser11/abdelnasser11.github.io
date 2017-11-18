@@ -126,6 +126,9 @@ section.page {
   #headshot {
     float: right;
     padding: 10px 20px;
+    max-width: 100%;
+    display: block;
+    height: auto;
   }
 
   .call-to-action {
